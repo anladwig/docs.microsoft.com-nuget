@@ -20,7 +20,6 @@ ms.workload:
 # Creating NuGet packages
 
 No matter what your package does or what code it contains, you use `nuget.exe` to package that functionality into a component that can be shared with and used by any number of other developers. To install `nuget.exe`, see [Install NuGet CLI](../install-nuget-client-tools.md#nugetexe-cli). Note that Visual Studio does not automatically include `nuget.exe`.
-
 Technically speaking, a NuGet package is just a ZIP file that's been renamed with the `.nupkg` extension and whose contents match certain conventions. This topic describes the detailed process of creating a package that meets those conventions. For a focused walkthrough, refer to [Quickstart: create and publish a package](../quickstart/create-and-publish-a-package.md).
 
 Packaging begins with the compiled code (assemblies), symbols, and/or other files that you want to deliver as a package (see [Overview and workflow](overview-and-workflow.md)). This process is independent from compiling or otherwise generating the files that go into the package, although you can use draw from information in a project file to keep the compiled assemblies and packages in sync.
@@ -56,7 +55,7 @@ Required properties:
 
 - The package identifier, which must be unique across the gallery that hosts the package.
 - A specific version number in the form *Major.Minor.Patch[-Suffix]* where *-Suffix* identifies [pre-release versions](prerelease-packages.md)
-- The package title as it should appears on the host (like nuget.org)
+- The package title as it should appear on the host (like nuget.org)
 - Author and owner information.
 - A long description of the package.
 
